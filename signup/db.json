@@ -1,0 +1,162 @@
+{
+  "userlogin": [
+    {
+      "id": "32d9",
+      "Name": "Riya sahu",
+      "Email": "riyasahu9827@gmail.com",
+      "Phone": "9872728823",
+      "Pass": "12345@Adj",
+      "Cpass": "12345@Adj"
+    },
+    {
+      "id": "444f",
+      "Name": "UDAY SAHU9840",
+      "Email": "udaysahu982@gmail.com",
+      "Phone": "0911134255",
+      "Pass": "Ud@y123",
+      "Cpass": "Ud@y123"
+    },
+    {
+      "id": "7f69",
+      "Name": "gian",
+      "Email": "gian@gmail.com",
+      "Phone": "4567891236",
+      "Pass": "Gian@123",
+      "Cpass": "Gian@123"
+    },
+    {
+      "id": "9366",
+      "Name": "lio",
+      "Email": "lio@gmail.com",
+      "Phone": "8598598599",
+      "Pass": "Lio@1234",
+      "Cpass": "Lio@1234"
+    },
+    {
+      "id": "78ff",
+      "Name": "lio23",
+      "Email": "lio23@gmail.com",
+      "Phone": "8598598599",
+      "Pass": "Lio@1234",
+      "Cpass": "Lio@1234"
+    }
+  ],
+  
+  "city":[
+        {
+            "city":"Bhopal",
+            "state":"Madhya Pradesh"
+        },
+         {
+            "city":"Indore",
+            "state":"Madhya Pradesh"
+        },
+         {
+            "city":"jabalpur",
+            "state":"Madhya Pradesh"
+        },
+         {
+            "city":"Ujjain",
+            "state":"Madhya Pradesh"
+        },
+         {
+            "city":"Rani Kamlapati",
+            "state":"Madhya Pradesh"
+        },
+         
+        {
+            "city":"Gwalior",
+            "state":"Madhya Pradesh"
+        },
+        {
+            "city":"Jaipur",
+            "state":"Rajaesthan"
+        },
+        {
+            "city":"Udaipur",
+            "state":"Rajaesthan"
+        },
+         {
+            "city":"Ayodhya",
+            "state":"Uttar Pradesh"
+        },
+         {
+            "city":"Varanashi",
+            "state":"Uttar Pradesh"
+        },
+         {
+            "city":"Mathura",
+            "state":"Uttar Pradesh"
+        }
+        
+    ],
+    "cars":[{
+      "imgLink" : "./image/car1.png",
+      "carSpecs" : "seden",
+      "carName" : "Mercedes",
+      "price" : "2000",
+      "seats" : "5",
+      "type" : "Automatic"
+
+    },
+    {
+      "imgLink" : "./image/car1.png",
+      "carSpecs" : "seden",
+      "carName" : "Mercedes",
+      "price" : "2000",
+      "seats" : "5",
+      "type" : "Automatic"
+
+    },
+    {
+      "imgLink" : "./image/car1.png",
+      "carSpecs" : "seden",
+      "carName" : "Mercedes",
+      "price" : "2000",
+      "seats" : "5",
+      "type" : "Automatic"
+
+    },
+    {
+      "imgLink" : "./image/car1.png",
+      "carSpecs" : "seden",
+      "carName" : "Mercedes",
+      "price" : "2000",
+      "seats" : "5",
+      "type" : "Automatic"
+
+    },
+    {
+      "imgLink" : "./image/car1.png",
+      "carSpecs" : "seden",
+      "carName" : "Mercedes",
+      "price" : "2000",
+      "seats" : "5",
+      "type" : "Automatic"
+
+    },
+       {
+      "imgLink" : "./image/car1.png",
+      "carSpecs" : "seden",
+      "carName" : "Mercedes",
+      "price" : "2000",
+      "seats" : "5",
+      "type" : "Automatic"
+
+    }
+    ],
+    "AddTags":[
+      { "tag":"Car Rental in Bhopal" },
+      { "tag":"Car Rental in Indore" },
+      { "tag":"From RKMP to BPL junction" },
+      { "tag":"Car Rental in Mp Nagar" },
+      { "tag":"Car Rental in Jabalpur" },
+      { "tag":"Car Rental in Pune" },
+      { "tag":"Car Rental in Mumbai" },
+      { "tag":"Car Rental in Delhi" },
+      { "tag":"Car Rental in Dehradhun" },
+      { "tag":"Car Rental in Andheri" },
+      { "tag":"Car Rental in Jaipur" },
+      { "tag":"Car Rental in Ujjain" }
+    ]
+}

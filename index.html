@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="swiper/carSwiper.css">
+
+</head>
+<body>
+  
+    <nav>
+        <div class="nav-bar">
+            <div class="nav-left">
+                <div class="icon">Horizon</div>
+                <ul>
+                    <li>Hotel</li>
+                    <li>Flight</li>
+                    <li>Train</li>
+                    <li>Travel</li>
+                    <li>Car Rental</li>
+                </ul>
+            </div>
+
+
+            <div class="nav-right">
+                <div class="nav-search">
+                  <input type="text" name="search" id="" placeholder="Search Destination"><label for="search" class="search-icon"><i class="fa-solid fa-magnifying-glass" ></i></label>  
+                </div>
+                <div class="nav-options">
+                    <div class="lang"> <div class="w-box"><i class="fa-solid fa-globe"></i></div><span>EN</span></div>
+                    <button class="signup" onclick="signupRedirect()">sign Up</button>
+                    <button class="login" onclick="loginRedirect()">Log In</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="menu-box">
+                <div class="menu-box-opt">
+                    <div class="dep-loc">
+
+                        <div class="dep-loc-text">
+                            <span>Departure</span>
+
+                            <span>Round Trip? 
+                                    <label class="switch">
+                                         <input type="checkbox" onclick="sameLocation()">
+                                         <span class="slider round"></span>
+                                     </label>
+                            </span>
+                    </div>
+                        <div class="dep-loc-inp">
+                            <!-- <input type="text" name="" id=""> -->
+                            <select name="" id="select-dep-loc">
+                                <option value="select city">
+                            <p> <span>City, airport or station</span> </p>
+                            <div class="dep-loc-inp-arrow"><i class="fa-solid fa-angle-down"></i></div>
+                            </option>  
+                            </select>  
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="des-loc">
+
+                         <div class="dep-loc-text">
+                            <span>Retrun Location</span>
+                    </div>
+                        <div class="dep-loc-inp">
+                            <!-- <input type="text" name="" id=""> -->
+                            <select name="" id="select-des-loc">
+                                <option value="select city">
+                            <p><i class="fa-solid fa-location-dot"></i> <span>City, airport or station</span> </p>
+                            <div class="dep-loc-inp-arrow"><i class="fa-solid fa-angle-down"></i></div>
+                            </option>  
+
+                            
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="picup-time"> <div class="dep-loc-text">
+                            <span>Pickup Date & Time</span>
+                    </div>
+                        <div class="dep-loc-inp">
+                            <!-- <input type="text" name="" id=""> -->
+                                <div class="drop-dt-box">
+                                <div class="drop-d-box"><input type="date" name="" id="depdate" max="9999-12-31" value="0000-00-00"></div>
+                                <div class="drop-t-box"><input type="time" value="00:00"></div>
+
+                             </div>
+                        </div>
+                    </div>
+
+
+                    <div class="drop-time"> <div class="dep-loc-text">
+                            <span>Return Date & Time</span>
+                            
+                    </div>
+                        <div class="dep-loc-inp">
+                            <!-- <input type="text" name="" id=""> -->
+                             <div class="drop-dt-box">
+                                <div class="drop-d-box"><input type="date" name="" id="dropdate" max="9999-12-31" value="0000-00-00"></div>
+                                <div class="drop-t-box"><input type="time" value="00:00"></div>
+
+                             </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="menu-box-filt">
+                    <div class="menu-box-filt-button">
+                        <div class="filt-filter">Filter:</div>
+                        <div class="filt-wdbtn">Without Driver</div>
+                        <div class="filt-wtdbtn">With Driver</div>
+                    </div>
+                    <div class="menu-box-search-button">Search <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="mid-section">
+
+        <div class="mid-section-head">
+
+            <div class="mid-section-head1">Top pick vehicle this month</div>
+            <div class="mid-section-head2">Experience the best journey with our cars</div>
+        </div>
+        <div class="mid-section-body">
+
+            <!-- <div class="car-card-section"> -->
+               
+
+
+                
+            <!-- </div> -->
+         
+        </div>
+
+    </div>
+
+    <div class="section">
+        <div class="section-head">
+            <h3>Discover Popular Car Rental in India</h3>
+            <p>Explore a diverse and extensive range of rental cars.</p>
+        </div>
+        <div class="section-body">
+            
+            <div class="section-body-card">Car Rental in Bhopal</div>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="section-1-head">
+            <p>Enjoy Extra Miles with our best deals</p> 
+            <span>See all <i class="fa-solid fa-arrow-right"></i>
+            </span>
+        </div>
+        <div class="section-1-body">
+            <div class="section-1-body-card"> <img src="" alt=""></div>
+            <div class="section-1-body-card"></div>
+            <div class="section-1-body-card"></div>
+           
+        </div>
+        <div class="section-1-icon"></div>
+    </div>
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <script src="swiper/carSwiper.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

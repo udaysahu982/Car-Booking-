@@ -1,0 +1,736 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    width: 98vw;
+    height: 99vh;
+    background: url("image/porshe.jpg");
+    /* border: 2px solid black; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-left: 7px;
+    margin-top: 5px;
+    border-radius: 10px;
+    
+}
+.nav-bar{
+    width: 100%;
+    height: 8%;
+    /* border: 2px solid black; */
+    display: flex;
+    color: white;
+    padding-top: 5px;
+   
+
+}
+
+.nav-left{
+    width: 40%;
+    /* border: 2px solid black; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-left ul{
+    /* border: 2px solid black; */
+    
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1.3rem;
+    gap: 20px;
+}
+.icon{
+    font-size: 1.8rem;
+    
+}
+.nav-right{
+    width: 60%;
+    /* border: 2px solid black; */
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-search{
+    width: 300px;
+    height: 35px;
+    /* box-shadow: -1px 1px 1px 1px white; */
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 5px;
+    
+}
+
+.nav-search input{
+    width: 85%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
+    color: white;
+    font-weight: 600;
+    
+}
+.search-icon{
+   padding-left: 10px;
+}
+.nav-options{
+    width: 400px;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.lang{
+    width: 25%;
+    /* border: 2px solid black; */
+    height: 70%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lang span{
+    font-size: 1.3rem;
+    
+}
+.w-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    /* border: 2px solid white; */
+    background-color: white;
+}
+.lang i{
+  font-size: 1.2rem;
+  color: black;
+}
+.signup{
+    width: 25%;
+    height: 70%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    
+}
+.login{
+    width: 25%;
+    height: 80%;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+
+}
+nav .container{
+    height: 90%;
+    width: 100%;
+    /* border: 2px solid white; */
+   
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+.menu-box{
+    width: 95%;
+    height: 180px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,.3);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.menu-box-opt{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+   
+}
+
+.dep-loc, .des-loc, .picup-time, .drop-time{
+    width: 24%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.dep-loc{
+   padding: 0px;
+}
+.dep-loc-text{
+    /* border: 2px solid black; */
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 999;
+    
+}
+.dep-loc-text span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.dep-loc-inp{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.selDeptLocOpt{
+
+    font-size: 1.5rem;
+}
+.dep-loc-inp-arrow{
+    width: 25px ;
+    height: 25px;
+    /* border:  2px solid black; */
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgb(192, 189, 189);
+    color: white;
+    font-weight: 100;
+}
+
+#select-des-loc, #select-dep-loc{
+    border: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.drop-dt-box{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+}
+.drop-d-box , .drop-t-box{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
+
+}
+.drop-d-box{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.drop-d-box input[type="date"]{
+    width: 100%;
+    height: 90%;
+    background: url("image/calendar.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: right;
+    font-size: 1.2rem;
+    font-weight: 999;
+    align-items: center;
+    background-position-y:center;
+    background-position: 95%;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+   opacity: 0;
+   font-size: 30px;  
+}
+
+.drop-t-box input[type="time"]{
+    width: 100%;
+    height: 90%;
+    /* background: url("image/clock.png"); */
+    background-size: 33px;
+    background-repeat: no-repeat;
+    background-position: 95%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 999;
+    border: none;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    padding-left: 20px;
+    /* opacity: 0; */
+    
+}
+
+.menu-box-filt{
+    border: 2px solid black;
+    width: 99%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.menu-box-filt-button{
+    width: 30%;
+    height: 75%;
+    /* border: 2px solid black; */
+    margin-left: 20px;
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    
+    
+}
+.menu-box-search-button{
+
+    cursor: pointer;
+    width: 10%;
+    height: 65%;
+    /* border: 2px solid black; */
+    color: white;
+    background-color: black;
+    margin-right: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+     font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+   
+}
+.menu-box-search-button:hover {
+    font-size: 1.6rem;
+}
+
+
+
+.filt-filter{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 550;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+   
+}
+.filt-wdbtn{
+    width: 30%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-weight: 550;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+    
+}
+.filt-wtdbtn{
+    width: 30%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 550;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+#select-dep-loc{
+    width:100%;
+    height:100%;
+    display: flex;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+#select-des-loc{
+    width:100%;
+    height:100%;
+    display: flex;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.mid-section{
+    width: 98vw;
+    /* height: 120vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.mid-section-head{
+    width: 98%;
+    height: 15vh;
+    /* border: 2px solid black; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding-left: 30px; */
+}
+.mid-section-head1{
+    font-size: 2.5rem;
+    font-weight: 999;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    
+}
+.mid-section-head2{
+    font-size: 1.3rem;
+    margin-left: 40px;
+}
+.mid-section-body{
+    width: 95%;
+    height: 100%;
+    /* border: 2px solid black; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-bottom: 40px;    
+    
+     
+}
+
+
+.car-card{
+    width: 20vw;
+    height: 60vh;
+    border: 2px solid black;
+    margin-top: 30px;
+    
+ 
+}
+
+.car-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden; /* Keeps the image corners rounded */
+            display: flex;
+            flex-direction: column; /* Stacks image, content, and button */
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 250px; /* Fixed height for a uniform look */
+            object-fit: cover; /* Prevents images from stretching/squishing */
+        }
+
+        .car-card-content {
+            /* padding: 20px; */
+            flex-grow: 1; /* Makes this area fill the available space */
+            /* display: flex;
+            flex-direction: column; */
+            padding-left: 10px;
+        }
+        
+        
+        .car-card-content h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .car-card-content p {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-top: 5px;
+            /* margin-bottom: 15px; */
+        }
+        .car-card-content ul{
+            list-style: none;
+        }
+        .card-p{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+            border: 2px solid black;
+            padding-left: 10px;
+            font-size: 1.3rem;
+            padding-right: 40px;
+          
+        }
+        
+        .car-card-button {
+            display: block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .car-card-button:hover {
+            background-color: #0056b3;
+        }
+
+        .section{
+            width: 100%;
+            /* height: 50vh; */
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 5vh;
+        }
+        .section-head{
+            width: 96vw;
+            height: 12vh;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .section-head h3{
+            height: 7vh;
+            width: 100%;
+            font-size: 1.8rem;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+
+        }
+        .section-head p{
+            height: 5vh;
+            width: 100%;
+            /* border: 2px solid black; */
+            font-size: 1rem;
+            font-family: sans-serif;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            color: gray;
+            padding-left: 20px;
+        }
+
+        .section-body{
+            width: 96vw;
+            /* border: 2px solid black; */
+            /* height: 38vh; */
+            display: grid;
+            flex-direction: row;
+            grid-template-columns: repeat(6,1fr);
+            
+            
+        }
+
+        .section-body-card{
+            margin: 20px 10px 10px 10px;
+            border: 1px solid gray;
+            height: 20px;
+            border-radius: 5px;
+            background-color: beige;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 4px;           
+        }
+
+        .section-1{
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .section-1-head{
+            border: 2px solid black;
+           width: 96%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* padding-left: 20px;
+            padding-right: 20px; */
+        }
+        .section-1-head p{
+            font-size: 1.7rem;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .section-1-head span{
+            border: 2px solid gray;
+            height: 60%;
+            width: 8vw;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .section-1-body{
+            border: 2px solid black;
+            width: 96vw;
+            height: 50vh;
+            gap: 20px;
+            display: flex;
+            overflow-x: scroll;
+            align-items: center;
+            row-gap: 20px
+            ;
+            
+            
+            
+        }
+        .section-1-body-card{
+            width:45vw;
+            height: 45vh;
+            border: 2px solid black;
+            flex-shrink: 0;
+            margin-left: 5px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+         @media (max-width: 1024px) {
+            .car-grid-container {
+                /* We change the 4 columns to 2 columns */
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* * This applies rules ONLY if the screen is 640px wide 
+         * or less (like a mobile phone).
+        */
+        @media (max-width: 640px) {
+            .car-grid-container {
+                /* We change it to 1 column on mobile */
+                grid-template-columns: 1fr;
+            }
+        }
