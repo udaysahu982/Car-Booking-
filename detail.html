@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="detailChange()">
+         <div class="nav-bar" id="nav-bar">
+            <div class="nav-left">
+                <div class="icon">Horizon</div>
+                <ul>
+                    <li>Hotel</li>
+                    <li>Flight</li>
+                    <li>Train</li>
+                    <li>Travel</li>
+                    <li>Car Rental</li>
+                </ul>
+            </div>
+
+
+            <div class="nav-right">
+                <div class="nav-search">
+                  <input type="text" name="search" id="" placeholder="Search Destination"><label for="search" class="search-icon"><i class="fa-solid fa-magnifying-glass" ></i></label>  
+                </div>
+                <div class="nav-options">
+                    <div class="lang"> <div class="w-box"><i class="fa-solid fa-globe"></i></div><span>EN</span></div>
+                    <button class="signup" onclick="signupRedirect()">sign Up</button>
+                    <button class="login" onclick="loginRedirect()">Log In</button>
+                </div>
+            </div>
+        </div>
+  <div id="okk"></div>
+        <div class="detail-section">
+            <div class="detail-section-left">
+                <div class="detail-section-left-top">
+                    <img id="detail-section-left-top-img" src="image/car1-2.png" alt=""></div>
+
+                <div class="detail-section-left-bottom">
+                    <div class="dslb-img" ><img id="dslbImg1" src="" alt="" onclick="changeimg1()" onmouseover="changeimg1()"> </div>
+                    <div class="dslb-img"> <img id="dslbImg2" src="" alt="" onclick="changeimg2()" onmouseover="changeimg2()"></div>
+                    <div class="dslb-img"> <img id="dslbImg3" src="" alt="" onclick="changeimg3()" onmouseover="changeimg3()"></div>
+                    <div class="dslb-img"> <img id="dslbImg4" src="image/car1.png" alt="" onclick="changeimg4()" onmouseover="changeimg4()"></div>
+                    
+                </div>
+            </div>
+            <div class="detail-section-right"></div>
+            
+        </div>
+
+        <script src="BookingData.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

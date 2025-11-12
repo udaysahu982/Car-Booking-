@@ -63,12 +63,16 @@ nav{
     /* box-shadow: -1px 1px 1px 1px white; */
     background-color: rgba(255, 255, 255, .4);
     border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
     
 }
 
 .nav-search input{
     width: 85%;
-    height: 100%;
+    /* height: 100%; */
+    height: 60%;
     border: none;
     background-color: transparent;
     padding-left: 10px;
@@ -77,7 +81,9 @@ nav{
     
 }
 .search-icon{
-   padding-left: 10px;
+   margin-right: 10px;
+   margin-top: 9px;
+
 }
 .nav-options{
     width: 400px;
@@ -131,7 +137,7 @@ nav{
     height: 80%;
     font-size: 1.2rem;
     border-radius: 20px;
-    background-color: white;
+    background-color: black;
     border: none;
 
 }
@@ -181,13 +187,13 @@ nav .container{
 }
 .dep-loc-text{
     /* border: 2px solid black; */
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     width: 100%;
     height: 40%;
     display: flex;
     justify-content: space-between;
-    align-items: end;
-    padding-bottom: 4px;
+    align-items: center;
+    padding-bottom: 0px;
     font-size: 1.2rem;
     color: black;
     font-weight: 999;
@@ -204,7 +210,7 @@ nav .container{
     color: black;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-arounbd;
     
 }
 
@@ -226,9 +232,9 @@ nav .container{
     font-weight: 100;
 }
 
-#select-des-loc, #select-dep-loc{
+/* #select-des-loc, #select-dep-loc{
     border: none;
-}
+} */
 
 /* The switch - the box around the slider */
 .switch {
@@ -299,9 +305,11 @@ input:checked + .slider:before {
     height: 100%;
     
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .drop-d-box , .drop-t-box{
-    width: 50%;
+    width: 45%;
     height: 100%;
     /* border: 2px solid black; */
 
@@ -329,7 +337,8 @@ input:checked + .slider:before {
     background-position: 95%;
     padding-right: 5px;
     padding-left: 5px;
-    border: none;
+    margin-top: 12px;
+    /* border: none; */
     text-transform: uppercase;
 }
 input[type="date"]::-webkit-inner-spin-button,
@@ -339,7 +348,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .drop-t-box input[type="time"]{
-    width: 100%;
+    width: 80%;
     height: 90%;
     /* background: url("image/clock.png"); */
     background-size: 33px;
@@ -350,12 +359,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: space-around;
     align-items: center;
     font-weight: 999;
-    border: none;
+
+    /* border: none; */
 }
 input[type="time"]::-webkit-calendar-picker-indicator {
     padding-left: 20px;
     /* opacity: 0; */
     
+}
+.drop-t-box{
+    padding: 0px;
+    margin-top: -20px;
 }
 
 .menu-box-filt{
@@ -402,6 +416,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 1.6rem;
 }
 
+#without{
+    display: none;
+}
+
 
 
 .filt-filter{
@@ -424,11 +442,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: flex;
     justify-content: center;
     align-items: center;
-     font-weight: 550;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
+    font-weight: 550;
 
-    
 }
+
 .filt-wtdbtn{
     width: 30%;
     height: 80%;
@@ -482,8 +500,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     /* padding-left: 30px; */
 }
 .mid-section-head1{
-    font-size: 2.5rem;
-    font-weight: 999;
+    font-size: 2.3rem;
+    font-weight: 600;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
     
@@ -555,6 +573,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
             font-size: 1.5rem;
             margin-top: 5px;
             /* margin-bottom: 15px; */
+            /* border: 0px; */
         }
         .car-card-content ul{
             list-style: none;
@@ -564,7 +583,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
             flex-direction: row;
             justify-content: space-between;
             margin-top: 10px;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             padding-left: 10px;
             font-size: 1.3rem;
             padding-right: 40px;
@@ -596,6 +615,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
             align-items: center;
             flex-direction: column;
             padding-bottom: 5vh;
+            position: relative;
         }
         .section-head{
             width: 96vw;
@@ -645,14 +665,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
             border: 1px solid gray;
             height: 20px;
             border-radius: 5px;
-            background-color: beige;
+            /* background-color: beige; */
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             padding-left: 4px;           
         }
 
         .section-1{
             width: 100vw;
-            border: 2px solid black;
+            /* border: 2px solid black; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -660,7 +680,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
         }
         .section-1-head{
-            border: 2px solid black;
+            /* border: 2px solid black; */
            width: 96%;
             height: 10vh;
             display: flex;
@@ -687,25 +707,47 @@ input[type="time"]::-webkit-calendar-picker-indicator {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .section-1-body{
-            border: 2px solid black;
+            /* border: 2px solid black; */
             width: 96vw;
             height: 50vh;
             gap: 20px;
             display: flex;
             overflow-x: scroll;
             align-items: center;
-            row-gap: 20px
-            ;
-            
-            
-            
+            row-gap: 20px ;  
+            scrollbar-width: none;
         }
+
         .section-1-body-card{
             width:45vw;
             height: 45vh;
             border: 2px solid black;
             flex-shrink: 0;
             margin-left: 5px;
+            border-radius: 15px;
+        }
+        
+        .section-1-body-card img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+        .section-1-icon{
+            width: 96vw;
+            height: 25vh;
+            border: 1px solid gray;
+            display: flex;
+        }
+        .section-1-icon-card{
+            width: 20vw;
+            height: 100%;
+            
+            font-size: 2rem;
+            font-weight: 600;
+            color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
 
@@ -733,4 +775,121 @@ input[type="time"]::-webkit-calendar-picker-indicator {
                 /* We change it to 1 column on mobile */
                 grid-template-columns: 1fr;
             }
+        }
+
+
+        /* mid section body cards car */
+        .car-card {
+            width: 320px;
+            height: 500px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden; /* Ensures the image respects the rounded corners */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Add a subtle "lift" effect on hover */
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        /* * == CARD IMAGE ==
+         * This container holds the image.
+        */
+        .card-image-container {
+            height: 200px; /* Fixed height for a uniform look */
+        }
+
+        .card-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            display: block;
+        }
+
+        /* * == CARD CONTENT ==
+         * This holds all the text information.
+        */
+        .card-content {
+            padding: 24px;
+        }
+
+        /* Car Name (e.g., "Toyota Camry") */
+        .car-name {
+            font-size: 1.5rem; /* 24px */
+            font-weight: 700;
+            color: #222;
+            margin: 0 0 8px 0; /* Reset top margin, add space below */
+        }
+
+        /* Car Type (e.g., "Sedan") */
+        .car-type {
+            font-size: 0.9rem; /* 14px */
+            font-weight: 500;
+            color: #666;
+            margin: 0 0 16px 0;
+        }
+
+        /* * == CAR DETAILS (Seats, Transmission) ==
+         * Using flexbox to align the spec "tags".
+        */
+        .car-details {
+            display: flex;
+            gap: 10px; /* Space between the tags */
+            margin-bottom: 20px;
+        }
+
+        .car-details span {
+            background-color: #f0f0f0;
+            padding: 6px 12px;
+            border-radius: 20px; /* Pill shape */
+            font-size: 0.8rem; /* 13px */
+            font-weight: 600;
+            color: #555;
+        }
+
+        /* * == CARD PRICE ==
+         * Using flexbox to align the amount and "/day" text.
+        */
+        .card-price {
+            display: flex;
+            align-items: baseline; /* Aligns the bottom of the texts */
+            border-top: 1px solid #f0f0f0;
+            padding-top: 20px;
+        }
+
+        .price-amount {
+            font-size: 2rem; /* 32px */
+            font-weight: 700;
+            color: #007aff; /* A strong blue for the price */
+        }
+
+        .price-per-day {
+            font-size: 1rem; /* 16px */
+            font-weight: 500;
+            color: #777;
+            margin-left: 6px;
+        }
+        
+        /* * === NEW CSS FOR THE BUTTON ===
+         */
+        .book-now-btn {
+            width: 100%;
+            padding: 12px 0;
+            margin-top: 20px; /* Space between price and button */
+            background-color: #007aff; /* Same blue as the price */
+            color: #ffffff;
+            border: none;
+            border-radius: 8px; /* Slightly rounded corners */
+            font-size: 1rem; /* 16px */
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+       
+        }
+
+        .book-now-btn:hover {
+            background-color: #0056b3; /* A darker blue on hover */
         }

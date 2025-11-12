@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
      <link rel="stylesheet" href="swiper/carSwiper.css">
+     <link rel="stylesheet" href="form.css">
 
 </head>
 <body>
@@ -53,7 +54,8 @@
 
                             <span>Round Trip? 
                                     <label class="switch">
-                                         <input type="checkbox" onclick="sameLocation()">
+                                        <!-- onclick="sameLocation()" -->
+                                         <input type="checkbox" >
                                          <span class="slider round"></span>
                                      </label>
                             </span>
@@ -91,7 +93,8 @@
                     </div>
 
 
-                    <div class="picup-time"> <div class="dep-loc-text">
+                    <div class="picup-time">
+                         <div class="dep-loc-text">
                             <span>Pickup Date & Time</span>
                     </div>
                         <div class="dep-loc-inp">
@@ -122,7 +125,7 @@
                 <div class="menu-box-filt">
                     <div class="menu-box-filt-button">
                         <div class="filt-filter">Filter:</div>
-                        <div class="filt-wdbtn">Without Driver</div>
+                        <div class="filt-wdbtn"> Without Driver</div>
                         <div class="filt-wtdbtn">With Driver</div>
                     </div>
                     <div class="menu-box-search-button">Search <i class="fa-solid fa-arrow-right"></i></div>
@@ -141,12 +144,181 @@
         </div>
         <div class="mid-section-body">
 
-            <!-- <div class="car-card-section"> -->
-               
-
-
+            <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car1-1.png" alt="BMW">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">BMW 2 Series</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">₹1000</span>
+                    <span class="price-per-day">/day</span>
+                </div>
                 
-            <!-- </div> -->
+                <button class="book-now-btn" onclick="CarDetail(0)">Book Now</button>
+                
+            </div>
+        </article>
+
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car3-1.png" alt="Mercedes">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Mercedes </h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Manual</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button class="book-now-btn" onclick="changeImageData(1)">Book Now</button>
+                
+            </div>
+        </article>
+
+
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car4-1.png" alt="Scorpio">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Scorpio N</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button class="book-now-btn" onclick="changeImageData(2)">Book Now</button>
+                
+            </div>
+        </article>
+
+
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/toyotaCamre.png" alt="Toyota Camry">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Toyota Camry</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button class="book-now-btn" onclick="changeImageData(3)">Book Now</button>
+                
+            </div>
+        </article>
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car1-1.png" alt="Toyota Camry">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Toyota Camry</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button class="book-now-btn" onclick="changeImageData(0)">Book Now</button>
+                
+            </div>
+        </article>
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car1-1.png" alt="Toyota Camry">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Toyota Camry</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button class="book-now-btn">Book Now</button>
+                
+            </div>
+        </article>
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car1-1.png" alt="Toyota Camry">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Toyota Camry</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button class="book-now-btn">Book Now</button>
+                
+            </div>
+        </article>
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car1-1.png" alt="Toyota Camry">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Toyota Camry</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button class="book-now-btn">Book Now</button>
+                
+            </div>
+        </article>
+
+        <article class="car-card">
+            <div class="card-image-container">
+                <img src="image/car1-1.png" alt="Toyota Camry">
+            </div>
+            <div class="card-content">
+                <h2 class="car-name">Toyota Camry</h2>
+                <p class="car-type">Sedan</p>
+                <div class="car-details">
+                    <span>&#128101; 5 Seats</span> <span>&#9881; Automatic</span> </div>
+                <div class="card-price">
+                    <span class="price-amount">$99</span>
+                    <span class="price-per-day">/day</span>
+                </div>
+                
+                <button onclick="BookCar()" class="book-now-btn">Book Now</button>
+                
+            </div>
+        </article>
          
         </div>
 
@@ -159,7 +331,37 @@
         </div>
         <div class="section-body">
             
-            <div class="section-body-card">Car Rental in Bhopal</div>
+            <form class="booking-form" onclick="BookCar()">
+    <h2>Car Booking Form</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="formName" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="formEmail" name="email" placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="formPhone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="from-date">From Date</label>
+    <input type="date" id="formDate" name="from-date" required>
+
+    <label for="to-date">To Date</label>
+    <input type="date" id="formTodate" name="to-date" required>
+
+    <label for="car">Select Car</label>
+    <select id="formCar" name="car" required>
+      <option value="">-- Select Car --</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="bmw">BMW</option>
+      <option value="scorpio">Scorpio</option>
+      <option value="xuv700">XUV 700</option>
+      <option value="fortuner">Fortuner</option>
+      <option value="creta">Creta</option>
+    </select>
+
+    <button type="submit" onclick="return formSubmit()">Book Now</button>
+  </form>
         </div>
     </div>
 
@@ -170,20 +372,29 @@
             </span>
         </div>
         <div class="section-1-body">
-            <div class="section-1-body-card"> <img src="" alt=""></div>
-            <div class="section-1-body-card"></div>
-            <div class="section-1-body-card"></div>
+            <div class="section-1-body-card"> <img src="image/image2.jpg" alt=""></div>
+            <div class="section-1-body-card"><img src="image/image3.jpg" alt=""></div>
+            <div class="section-1-body-card"><img src="image/image1.jpg" alt=""></div>
+            <div class="section-1-body-card"><img src="image/image4.jpg" alt=""></div>
+            <div class="section-1-body-card"><img src="image/image.jpg" alt=""></div>
            
         </div>
-        <div class="section-1-icon"></div>
+        <div class="section-1-icon">
+            <div class="section-1-icon-card">HELLOSIGN</div>
+            <div class="section-1-icon-card">DOORDASH</div>
+            <div class="section-1-icon-card"><i class="fa-solid fa-coins"></i>coinbase</div>
+            <div class="section-1-icon-card"><i class="fa-solid fa-paper-plane"></i>Airtable</div>
+            <div class="section-1-icon-card">pendo</div>
+            <div class="section-1-icon-card"><i class="fa-solid fa-folder-tree"></i>treehouse</div>
+        </div>
     </div>
 
-
+    
 
 
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
      <script src="swiper/carSwiper.js"></script>
     <script src="script.js"></script>
+    <script src="BookingData.js"></script>
 </body>
 </html>

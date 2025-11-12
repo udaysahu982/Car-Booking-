@@ -41,122 +41,223 @@
       "Cpass": "Lio@1234"
     }
   ],
-  
-  "city":[
-        {
-            "city":"Bhopal",
-            "state":"Madhya Pradesh"
-        },
-         {
-            "city":"Indore",
-            "state":"Madhya Pradesh"
-        },
-         {
-            "city":"jabalpur",
-            "state":"Madhya Pradesh"
-        },
-         {
-            "city":"Ujjain",
-            "state":"Madhya Pradesh"
-        },
-         {
-            "city":"Rani Kamlapati",
-            "state":"Madhya Pradesh"
-        },
-         
-        {
-            "city":"Gwalior",
-            "state":"Madhya Pradesh"
-        },
-        {
-            "city":"Jaipur",
-            "state":"Rajaesthan"
-        },
-        {
-            "city":"Udaipur",
-            "state":"Rajaesthan"
-        },
-         {
-            "city":"Ayodhya",
-            "state":"Uttar Pradesh"
-        },
-         {
-            "city":"Varanashi",
-            "state":"Uttar Pradesh"
-        },
-         {
-            "city":"Mathura",
-            "state":"Uttar Pradesh"
-        }
-        
-    ],
-    "cars":[{
-      "imgLink" : "./image/car1.png",
-      "carSpecs" : "seden",
-      "carName" : "Mercedes",
-      "price" : "2000",
-      "seats" : "5",
-      "type" : "Automatic"
-
+  "city": [
+    {
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "id": "f915"
     },
     {
-      "imgLink" : "./image/car1.png",
-      "carSpecs" : "seden",
-      "carName" : "Mercedes",
-      "price" : "2000",
-      "seats" : "5",
-      "type" : "Automatic"
-
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "id": "9bee"
     },
     {
-      "imgLink" : "./image/car1.png",
-      "carSpecs" : "seden",
-      "carName" : "Mercedes",
-      "price" : "2000",
-      "seats" : "5",
-      "type" : "Automatic"
-
+      "city": "jabalpur",
+      "state": "Madhya Pradesh",
+      "id": "09e7"
     },
     {
-      "imgLink" : "./image/car1.png",
-      "carSpecs" : "seden",
-      "carName" : "Mercedes",
-      "price" : "2000",
-      "seats" : "5",
-      "type" : "Automatic"
-
+      "city": "Ujjain",
+      "state": "Madhya Pradesh",
+      "id": "1fa1"
     },
     {
-      "imgLink" : "./image/car1.png",
-      "carSpecs" : "seden",
-      "carName" : "Mercedes",
-      "price" : "2000",
-      "seats" : "5",
-      "type" : "Automatic"
-
+      "city": "Rani Kamlapati",
+      "state": "Madhya Pradesh",
+      "id": "89bb"
     },
-       {
-      "imgLink" : "./image/car1.png",
-      "carSpecs" : "seden",
-      "carName" : "Mercedes",
-      "price" : "2000",
-      "seats" : "5",
-      "type" : "Automatic"
-
+    {
+      "city": "Gwalior",
+      "state": "Madhya Pradesh",
+      "id": "c2cf"
+    },
+    {
+      "city": "Jaipur",
+      "state": "Rajaesthan",
+      "id": "cee1"
+    },
+    {
+      "city": "Udaipur",
+      "state": "Rajaesthan",
+      "id": "c52b"
+    },
+    {
+      "city": "Ayodhya",
+      "state": "Uttar Pradesh",
+      "id": "c5dd"
+    },
+    {
+      "city": "Varanashi",
+      "state": "Uttar Pradesh",
+      "id": "e1f3"
+    },
+    {
+      "city": "Mathura",
+      "state": "Uttar Pradesh",
+      "id": "d5ee"
     }
-    ],
-    "AddTags":[
-      { "tag":"Car Rental in Bhopal" },
-      { "tag":"Car Rental in Indore" },
-      { "tag":"From RKMP to BPL junction" },
-      { "tag":"Car Rental in Mp Nagar" },
-      { "tag":"Car Rental in Jabalpur" },
-      { "tag":"Car Rental in Pune" },
-      { "tag":"Car Rental in Mumbai" },
-      { "tag":"Car Rental in Delhi" },
-      { "tag":"Car Rental in Dehradhun" },
-      { "tag":"Car Rental in Andheri" },
-      { "tag":"Car Rental in Jaipur" },
-      { "tag":"Car Rental in Ujjain" }
-    ]
+  ],
+  "cars": [
+    {
+      "imgLink": "image/car1-1.png",
+      "imgLink1": "./image/car1.png",
+      "imgLink2": "./image/car1-2.png",
+      "imgLink3": "./image/car1-3.png",
+      "carSpecs": "seden",
+      "carName": "Mercedes",
+      "price": "2000",
+      "seats": "5",
+      "type": "Automatic",
+      "id": "ca4e"
+    },
+    {
+      "imgLink": "image/car3-1.png",
+      "imgLink1": "image/car3.png",
+      "imgLink2": "image/car3-2.png",
+      "imgLink3": "image/car3.png",
+      "carSpecs": "seden",
+      "carName": "Mercedes",
+      "price": "2000",
+      "seats": "5",
+      "type": "Automatic",
+      "id": "7112"
+    },
+    {
+      "imgLink": "./image/car4-1.png",
+      "imgLink1": "./image/car4-2.png",
+      "imgLink2": "./image/car4-3.png",
+      "imgLink3": "./image/car4.png",
+      "carSpecs": "seden",
+      "carName": "Mercedes",
+      "price": "2000",
+      "seats": "5",
+      "type": "Automatic",
+      "id": "4234"
+    },
+    {
+      "imgLink": "./image/car1.png",
+      "carSpecs": "seden",
+      "carName": "Mercedes",
+      "price": "2000",
+      "seats": "5",
+      "type": "Automatic",
+      "id": "2c36"
+    },
+    {
+      "imgLink": "image/car1.png",
+      "carSpecs": "seden",
+      "carName": "Mercedes",
+      "price": "2000",
+      "seats": "5",
+      "type": "Automatic",
+      "id": "7e37"
+    },
+    {
+      "imgLink": "image/car1.png",
+      "carSpecs": "seden",
+      "carName": "Mercedes",
+      "price": "2000",
+      "seats": "5",
+      "type": "Automatic",
+      "id": "5463"
+    }
+  ],
+  "AddTags": [
+    {
+      "tag": "Car Rental in Bhopal",
+      "id": "f51a"
+    },
+    {
+      "tag": "Car Rental in Indore",
+      "id": "658f"
+    },
+    {
+      "tag": "From RKMP to BPL junction",
+      "id": "7a42"
+    },
+    {
+      "tag": "Car Rental in Mp Nagar",
+      "id": "6aa8"
+    },
+    {
+      "tag": "Car Rental in Jabalpur",
+      "id": "b604"
+    },
+    {
+      "tag": "Car Rental in Pune",
+      "id": "3eb8"
+    },
+    {
+      "tag": "Car Rental in Mumbai",
+      "id": "f468"
+    },
+    {
+      "tag": "Car Rental in Delhi",
+      "id": "86a2"
+    },
+    {
+      "tag": "Car Rental in Dehradhun",
+      "id": "3c36"
+    },
+    {
+      "tag": "Car Rental in Andheri",
+      "id": "bc70"
+    },
+    {
+      "tag": "Car Rental in Jaipur",
+      "id": "1487"
+    },
+    {
+      "tag": "Car Rental in Ujjain",
+      "id": "f34a"
+    }
+  ],
+  "carData": [
+    {
+      "id": "6dff",
+      "Name": "UDAY SAHU",
+      "Email": "udaysahu982@gmail.com",
+      "Phone": "0911134259",
+      "From": "2025-11-06",
+      "ToDate": "2025-11-26",
+      "Car": "bmw"
+    },
+    {
+      "id": "b166",
+      "Name": "UDAY SAHU",
+      "Email": "udaysahu982@gmail.com",
+      "Phone": "0911134259",
+      "From": "2025-11-06",
+      "ToDate": "2025-11-26",
+      "Car": "bmw"
+    },
+    {
+      "id": "cb16",
+      "Name": "UDAY SAHU",
+      "Email": "udaysahu982@gmail.com",
+      "Phone": "0911134259",
+      "From": "2025-11-06",
+      "ToDate": "2025-11-26",
+      "Car": "xuv700"
+    },
+    {
+      "id": "3d54",
+      "Name": "UDAY SAHU",
+      "Email": "udaysahu982@gmail.com",
+      "Phone": "0911134259",
+      "From": "2025-11-06",
+      "ToDate": "2025-11-26",
+      "Car": "fortuner"
+    },
+    {
+      "id": "d6fa",
+      "Name": "UDAY SAHU",
+      "Email": "udaysahu982@gmail.com",
+      "Phone": "0911134259",
+      "From": "2025-11-06",
+      "ToDate": "2025-11-26",
+      "Car": "creta"
+    }
+  ]
 }
