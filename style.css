@@ -412,9 +412,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
    
 }
-.menu-box-search-button:hover {
-    font-size: 1.6rem;
-}
+
 
 #without{
     display: none;
