@@ -893,3 +893,118 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         .book-now-btn:hover {
             background-color: #0056b3; /* A darker blue on hover */
         }
+
+
+
+
+        /* media query here */
+
+        @media(max-width:400px){
+            .nav-bar{
+                display: none;
+               }
+
+               .mid-section-body{
+    /* width: 95%;
+    height: 100%;
+    
+    display: grid; */
+    /* grid-template-columns: repeat(1,1fr); */
+    overflow-x: scroll;
+    gap: 0px;
+    padding-bottom: 0px;    
+    }
+
+    .car-card{
+        margin-right: 20px;
+    }
+    .mid-section-head1 {
+     margin-left: 5px;
+    }
+    .mid-section-head{
+        height: auto;
+    }
+    .mid-section-head2{
+        margin-left: 5px;
+    }
+    .section{
+        height: auto;
+    }
+    .section-head{
+        height: auto;
+    }
+    .section-head h3{
+        height: auto;
+    }
+    .section-head p{
+        height: auto;
+        padding-left: 10px;
+    }
+    .section-1-head span{
+        width: 45vw;
+    }
+    .section-1-body-card {
+    width: 90vw;
+    height: 40vh;
+    }
+    .menu-box {
+    width: 95%;
+    height: 472px;
+    
+    }
+    .menu-box-opt {
+    width: 98%;
+    height: 98%;
+    flex-direction: column;
+   
+    }
+    .dep-loc, .des-loc, .picup-time, .drop-time {
+    width: 100%;
+   
+    }
+    .dep-loc-text{
+    margin-bottom: 5px;
+    }
+    .drop-d-box input[type="date"] {
+        margin-top: 0px;
+        font-size: 1rem;
+        justify-content: left;
+    }
+    .menu-box-search-button {
+    
+    width: 22%;
+    height: 50%;
+    font-size: 1rem;
+    }
+    .menu-box-filt{
+        border: none;
+    }
+
+    .menu-box-filt-button {
+    width: 68%;
+    height: 66%;
+    /* border: 2px solid black; */
+    margin-left: 0px;
+    font-size: 0.8rem;
+    }
+    .filt-wdbtn , .filt-wtdbtn {
+        text-align: center;
+    }
+
+
+     .section-1-icon{
+            overflow-x: scroll;
+            scrollbar-width: none;
+           
+        }
+        .section-1-icon-card{
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 45vw;
+            font-size: 1rem;
+           padding-right: 10px;
+           border-right: 1px solid gray;
+
+        }
+        
+        }
