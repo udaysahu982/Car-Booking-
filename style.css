@@ -950,6 +950,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     .menu-box {
     width: 95%;
     height: 472px;
+    background: rgba(255, 255, 255, 0.4);
     
     }
     .menu-box-opt {
@@ -965,10 +966,21 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     .dep-loc-text{
     margin-bottom: 5px;
     }
+    #select-dep-loc{
+        background: rgba(255, 255, 255, 0.5);
+    }
+    #select-des-loc{
+        background: rgba(255, 255, 255, 0.5);
+    }
+    
     .drop-d-box input[type="date"] {
         margin-top: 0px;
         font-size: 1rem;
         justify-content: left;
+    }
+
+    .drop-t-box input[type="time"]{
+        background: rgba(255, 255, 255, 0.5);
     }
     .menu-box-search-button {
     
@@ -995,6 +1007,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
      .section-1-icon{
             overflow-x: scroll;
             scrollbar-width: none;
+            height: 18vh;
            
         }
         .section-1-icon-card{
