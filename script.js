@@ -197,3 +197,41 @@ let formSubmit=()=>{
 
 // }
 // carDetail();
+
+// let checkDriver=()=>{
+//   if(document.querySelector("#rda").checked){
+//     alert("checked")
+//   }
+//   let check2=document.querySelector("#rdo")
+  
+// }
+// checkDriver()
+
+
+let check1=()=>{
+  document.querySelector(".filt-wtdbtn").style.backgroundColor="transparent"
+  document.querySelector(".filt-wtdbtn").style.color="black"
+    return checkDriver(true)
+}
+
+let check2=()=>{
+  document.querySelector(".filt-wdbtn").style.backgroundColor="transparent"
+  document.querySelector(".filt-wdbtn").style.color="black"
+  return checkDriver(false)
+}
+
+let checkDriver=(checkVal)=>{
+
+  if(checkVal==true){
+   document.querySelector(".filt-wdbtn").style.backgroundColor="black"
+  document.querySelector(".filt-wdbtn").style.color="white"
+  }
+  else if(checkVal==false){
+    document.querySelector(".filt-wtdbtn").style.backgroundColor="black"
+  document.querySelector(".filt-wtdbtn").style.color="white"
+  }
+
+}
+
+
+

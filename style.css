@@ -412,6 +412,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; 
    
 }
+.filt-wdbtn input, .filt-wtdbtn input{
+    display: none;  
+}
+.filt-wdbtn label span{
+    font-weight: 550;
+    font-size: .8rem;
+}
+.filt-wtdbtn label span{
+    font-weight: 600;
+   
+    font-size: .8rem;
+}
 
 
 #without{
@@ -955,6 +967,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 98%;
     height: 98%;
     flex-direction: column;
+    background: white;
    
     }
     .dep-loc, .des-loc, .picup-time, .drop-time {
@@ -1017,5 +1030,26 @@ input[type="time"]::-webkit-calendar-picker-indicator {
            border-right: 1px solid gray;
 
         }
+        .filt-filter{
+            font-size: 1.2rem;
+        }
+        .menu-box-search-button{
+            margin-right: 5px;
+        }
+            .menu-box-filt-button{
+                width: 75%;
+            }
+            .filt-wdbtn{
+                width: 33%;
+            }
+            .filt-wtdbtn{
+                width: 33%;
+            }
+            .car-card{
+                width: 308px;
+            }
+            .mid-section-body{
+                grid-template-columns: repeat(20,1fr);
+            }
         
         }
