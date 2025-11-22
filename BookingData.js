@@ -18,21 +18,26 @@ let imgData2=[
 
             ]
 
+            // let carName;
+
 
 let changeImageData=(val)=>{
     
     
     localStorage.setItem("saveValue",val);
+    
     // let img1=document.querySelector("#detail-section-left-top-img");
     // img1.src=`${imgData[val]}`
     location.href="detail.html";
     // detailChange();
+    
 } 
  let img1=document.querySelector("#detail-section-left-top-img");
     let img2=document.querySelector("#dslbImg1");
     let img3=document.querySelector("#dslbImg2");
     let img4=document.querySelector("#dslbImg3");
     let val=localStorage.getItem("saveValue")
+    
 
 let detailChange=()=>{
    
@@ -40,6 +45,7 @@ let detailChange=()=>{
     img2.src=`${imgData[val]}`
     img3.src=`${imgData1[val]}`
     img4.src=`${imgData2[val]}`
+   
 
 }
 let changeimg1=()=>{
@@ -51,3 +57,24 @@ let changeimg2=()=>{
 let changeimg3=()=>{
     img1.src=`${imgData2[val]}`
 }
+
+        let calculateDays=()=> {
+            let startInput = document.getElementById('startDate').value;
+            let endInput = document.getElementById('endDate').value;
+            let totalDaysSpan = document.getElementById('totalDays');
+
+            if (startInput && endInput) {
+                let start = new Date(startInput);
+                let end = new Date(endInput);
+                
+                // Calculate difference
+                let diffTime = end - start;
+                let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+                if (diffDays > 0) {
+                    totalDaysSpan.innerText = diffDays;
+                } else {
+                    totalDaysSpan.innerText = "0";
+                }
+            }
+        }

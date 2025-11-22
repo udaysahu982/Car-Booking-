@@ -3,7 +3,7 @@
     height: 8vh;
 }
 .detail-section{
-    width: 100vw;
+    width: 99.5vw;
     height: 90vh;
     border: 2px solid black;
     display: flex;
@@ -18,7 +18,7 @@
     justify-content: space-around;
 }
 .detail-section-right{
-    width: 45vw;
+    width: 48vw;
     height: 90vh;
     border: 2px solid black;
     
@@ -50,6 +50,163 @@
     width: 100%;
     height: 100%;
 }
+
+
+/* The Main Box (50vw) */
+.rental-box {
+    width: 46vw; /* Exact request */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-sizing: border-box; /* Ensures padding is included in the 50vw */
+    margin-top: 80px;
+    margin-left: 20px;
+    height: 70vh;
+}
+
+/* Header Section */
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.car-title {
+    margin: 0;
+    font-size: 24px;
+    color: #1a1a1a;
+}
+
+.car-rating {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+.car-rating i { color: #f5c518; }
+
+.price-display .amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.price-display .unit {
+    color: #7f8c8d;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Specs Row */
+.specs-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.spec {
+    color: #555;
+    font-size: 15px;
+}
+.spec i { color: #3498db; margin-right: 8px; }
+
+/* Date Section */
+.booking-controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    align-items: flex-end;
+}
+
+.date-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-group label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.date-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.duration-box {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+    height: 42px; /* Match input height roughly */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Section */
+.action-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.driver-selection {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.radio-box input {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.book-btn {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.book-btn:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+
 
 @media(max-width:400px){
     .detail-section {

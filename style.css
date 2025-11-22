@@ -4,6 +4,44 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.navopt{
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+.topnavopt{
+
+}
+.nav-options-icon{
+    font-size: 2.1rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.nav-options-icon span{
+    margin-bottom: 20px;
+}
+
+.nav-options-icon ul li{
+    border-bottom: 2px solid rgb(74, 71, 71);
+    /* border: 2px solid black; */
+    list-style: none;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    height: 40px;
+}
+.nav-options-icon ul li :hover{
+    color: yellow;
+}
 nav{
     width: 98vw;
     height: 99vh;
@@ -27,7 +65,23 @@ nav{
    
 
 }
-
+    .check-bar{
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        font-size: 2rem;
+    }
+    .check-bar input{
+        display: none;
+    }
+    .cross-bar{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2rem;
+        color: white;
+        display: none;
+    }
 .nav-left{
     width: 40%;
     /* border: 2px solid black; */
@@ -1051,5 +1105,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
             .mid-section-body{
                 grid-template-columns: repeat(20,1fr);
             }
-        
+            .check-bar{
+                /* display: block; */
+                top: 10px;
+                color: white;
+            }
+            
+            
         }

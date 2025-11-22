@@ -12,6 +12,19 @@
 
 </head>
 <body>
+
+    <div class="navopt">
+        <div class="nav-options-icon">
+            <span>Horizon</span>
+                <ul>
+                    <li>Hotel</li>
+                    <li>Flight</li>
+                    <li>Train</li>
+                    <li>Travel</li>
+                    <li>Car Rental</li>
+                </ul>
+            </div>
+    </div>
   
     <nav>
         <div class="nav-bar">
@@ -37,9 +50,10 @@
                     <button class="login" onclick="loginRedirect()">Log In</button>
                 </div>
             </div>
-
-            <label for="checkbar"><input type="checkbox" name="" id="checkbar"> <i class="fa-solid fa-bars"></i></label>
         </div>
+        
+            <label for="checkbar" class="check-bar" onclick="openCheck()"><input type="checkbox" name="" id="checkbar"> <i class="fa-solid fa-bars"></i></label>
+            <label for="crossbar" class="cross-bar" onclick="closeCheck()"><i class="fa-solid fa-xmark"></i></label>
 
 
 

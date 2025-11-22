@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detail.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body onload="detailChange()">
          <div class="nav-bar" id="nav-bar">
@@ -47,7 +49,63 @@
                 </div>
             </div>
             <div class="detail-section-right">
-                
+                <div class="rental-box">
+        
+        <div class="box-header">
+            <div>
+                <h2 class="car-title">Toyota Camry Hybrid</h2>
+                <div class="car-rating">
+                    <i class="fas fa-star"></i> 4.8 (120 Reviews)
+                </div>
+            </div>
+            <div class="price-display">
+                <span class="amount">$50</span>
+                <span class="unit">/ Day</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="specs-row">
+            <div class="spec"><i class="fas fa-chair"></i> 5 Seats</div>
+            <div class="spec"><i class="fas fa-suitcase"></i> 2 Bags</div>
+            <div class="spec"><i class="fas fa-cogs"></i> Automatic</div>
+            <div class="spec"><i class="fas fa-gas-pump"></i> Hybrid</div>
+        </div>
+
+        <div class="booking-controls">
+            <div class="date-group">
+                <label>From</label>
+                <input type="date" id="startDate" onchange="calculateDays()">
+            </div>
+            <div class="date-group">
+                <label>To</label>
+                <input type="date" id="endDate" onchange="calculateDays()">
+            </div>
+            <div class="duration-box">
+                <span id="totalDays">0</span> Days
+            </div>
+        </div>
+
+        <div class="action-footer">
+            
+            <div class="driver-selection">
+                <label class="radio-box">
+                    <input type="radio" name="driver" checked>
+                    <span>Self Drive</span>
+                </label>
+                <label class="radio-box">
+                    <input type="radio" name="driver">
+                    <span>With Driver</span>
+                </label>
+            </div>
+
+            <button class="book-btn" onclick="alert('Proceeding to Checkout...')">
+                Book Now
+            </button>
+        </div>
+
+    </div>
             </div>
             
         </div>

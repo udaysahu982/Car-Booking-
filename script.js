@@ -232,6 +232,19 @@ let checkDriver=(checkVal)=>{
   }
 
 }
+let openCheck=()=>{
+  let chkb=document.querySelector(".navopt");
+  chkb.style.display="block";
+  document.querySelector(".cross-bar").style.display="block"
+  document.querySelector(".check-bar").style.display="none"
+}
+let closeCheck=()=>{
+  let chkb=document.querySelector(".navopt");
+  chkb.style.display="none";
+   document.querySelector(".cross-bar").style.display="none"
+  document.querySelector(".check-bar").style.display="block"
+
+}
 
 
 
