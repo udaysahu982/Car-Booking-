@@ -78,3 +78,37 @@ let changeimg3=()=>{
                 }
             }
         }
+
+        let changeNav=()=>{
+            let newClass=document.querySelector("#nav-bar")
+            newClass.style.height="45vh"
+            let navLeft=document.querySelector(".nav-left")
+            navLeft.style.flexDirection="column";
+            navLeft.style.width="100%";
+           let navLeftul= document.querySelector(".nav-left ul")
+           navLeftul.style.display="flex";
+           navLeftul.style.flexDirection="column";
+           navLeftul.style.width="100%";
+           document.querySelector(".icon").style.fontSize="2.5rem"
+
+           document.querySelector(".ulli").classList.add("addListStyle")
+           document.querySelector(".ulli1").classList.add("addListStyle")
+           document.querySelector(".ulli2").classList.add("addListStyle")
+           document.querySelector(".ulli3").classList.add("addListStyle")
+           document.querySelector(".ulli4").classList.add("addListStyle")
+           document.querySelector(".check-bar").style.display="none"
+           document.querySelector(".cross-bar").style.display="block"
+            
+        }
+        let unchangeNav=()=>{
+        document.querySelector(".nav-left ul").style.display="none"  
+        document.querySelector("#nav-bar").style.height="8vh"
+        let navLeft=document.querySelector(".nav-left")
+            navLeft.style.flexDirection="column";
+            navLeft.style.width="40%";
+            document.querySelector(".icon").style.fontSize="1.8rem"
+
+             document.querySelector(".check-bar").style.display="block"
+             document.querySelector(".cross-bar").style.display="none"
+            
+        }

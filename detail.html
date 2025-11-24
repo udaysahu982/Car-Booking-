@@ -14,11 +14,11 @@
             <div class="nav-left">
                 <div class="icon">Horizon</div>
                 <ul>
-                    <li>Hotel</li>
-                    <li>Flight</li>
-                    <li>Train</li>
-                    <li>Travel</li>
-                    <li>Car Rental</li>
+                    <li class="ulli">Hotel</li>
+                    <li class="ulli1">Flight</li>
+                    <li class="ulli2">Train</li>
+                    <li class="ulli3">Travel</li>
+                    <li class="ulli4">Car Rental</li>
                 </ul>
             </div>
 
@@ -35,8 +35,8 @@
             </div>
         </div>
 
-         <label for="checkbar" class="check-bar" onclick="openCheck()"><input type="checkbox" name="" id="checkbar"> <i class="fa-solid fa-bars"></i></label>
-            <label for="crossbar" class="cross-bar" onclick="closeCheck()"><i class="fa-solid fa-xmark"></i></label>
+         <label for="checkbar" class="check-bar" onclick="changeNav()"><input type="checkbox" name="" id="checkbar"> <i class="fa-solid fa-bars"></i></label>
+            <label for="crossbar" class="cross-bar" onclick="unchangeNav()"><i class="fa-solid fa-xmark"></i></label>
 
   <div id="okk"></div>
         <div class="detail-section">
@@ -78,7 +78,9 @@
         </div>
 
         <div class="booking-controls">
-            <div class="date-group">
+            <div class="date-box">
+
+                <div class="date-group">
                 <label>From</label>
                 <input type="date" id="startDate" onchange="calculateDays()">
             </div>
@@ -86,6 +88,9 @@
                 <label>To</label>
                 <input type="date" id="endDate" onchange="calculateDays()">
             </div>
+
+            </div>
+            
             <div class="duration-box">
                 <span id="totalDays">0</span> Days
             </div>

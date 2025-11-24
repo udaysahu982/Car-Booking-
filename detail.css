@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 #nav-bar{
     background-color: black;
     height: 8vh;
@@ -66,6 +71,7 @@
     margin-top: 80px;
     margin-left: 20px;
     height: 70vh;
+   
 }
 
 /* Header Section */
@@ -124,9 +130,15 @@ hr {
 /* Date Section */
 .booking-controls {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    width: 100%;
     margin-bottom: 25px;
     align-items: flex-end;
+}
+.date-box{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 .date-group {
@@ -213,24 +225,39 @@ hr {
 
 @media(max-width:400px){
 
+    .newNav{
+        height: 40vh;
+        background-color: black;
+    }
+    .addListStyle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    }
+
     .nav-bar{
-        width: 145vw;
+        width: 100vw;
         display: block;
     }
     .nav-left ul{
+        display: none;
+    }
+    .nav-right{
         display: none;
     }
         .check-bar {
         /* display: block; */
         top: 10px;
         color: white;
-        right: -156px;
+        right: 12px;
     }
     .cross-bar {
         position: absolute;
         top: 10px;
         
-        right: -156px;
+        right: 12px;
     font-size: 2rem;
     color: white;
     display: none;
@@ -238,60 +265,83 @@ hr {
 
 
     .detail-section {
-        width: 145vw;
+        width: 100vw;
         height: 77vh;
         border: none;
         display: flex;
         flex-direction: column;
     }
-        .detail-section-left {
+       .detail-section-left {
         width: 100%;
         height: 80vh;
         border: none;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
-        .detail-section-left-bottom {
-        width: 25%;
-        height: 77vh;
+            .detail-section-left-bottom {
+        width: 100%;
+        height: 19vh;
         border: none;
         display: flex;
         gap: 6px;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
-    .detail-section-left-top {
-        /* margin-top: 20px; */
-        width: 73%;
+        .detail-section-left-top {
+        margin-top: 20px;
+        width: 100%;
         height: 78vh;
         border: 2px solid black;
+        margin-bottom: 5px;
     }
 
 
         .detail-section-right {
-        width: 145vw;
+        width: 100vw;
         height: 115vh;
         border: none;
     }
+
+    
     .rental-box {
-    width: 135vw;
+    width: 96vw;
     background: white;
-    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
-    margin-top: 40px;
-    margin-left: 20px;
-    height: 70vh;
+    /* margin-top: 40px; */
+    margin-left: 10px;
+    height: 90vh;
+    border: 2px solid black;
 }
 .booking-controls {
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    align-items: center;
+}
+.date-box{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+    .date-group{
+        width: 50px;
+    }
+    .date-group label {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.duration-box{
+    width: 150px;
 }
        
 
